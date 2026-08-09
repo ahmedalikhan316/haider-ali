@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Online Graphic Designer by Raja Haider Ali — graphic design, video editing, invitation cards, business cards, social media ads, panaflex, CV and website design.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Online Graphic Designer | Raja Haider Ali</title>
+<style>
+:root{
+  --blue:#075ee8; --blue2:#0b8cff; --yellow:#ffc400; --yellow2:#ffdb38;
+  --green:#16b84e; --orange:#ff8a00; --purple:#7b4cff;
+  --ink:#12213a; --muted:#607089; --white:#fff; --soft:#f4f8ff;
+  --line:#dce8f7;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);
+  background:#fff;line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1180px;margin:auto;padding:0 22px}
+
+/* NAVIGATION */
+nav{
+  position:sticky;top:0;z-index:20;background:#fff;
+  border-bottom:2px solid #e8f0fb;box-shadow:0 4px 18px #0b4ea312;
+}
+.navin{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:18px}
+.brand{font-weight:900;letter-spacing:.2px;color:var(--ink)}
+.brand span{color:var(--blue)}
+.navlinks{display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+.navlinks a{
+  padding:10px 13px;border-radius:10px;font-weight:800;color:#24334a;
+}
+.navlinks a:hover{background:#edf5ff;color:var(--blue)}
+.navlinks a:last-child{background:var(--yellow);color:#111;box-shadow:0 5px 14px #ffc40055}
+
+/* HERO */
+.hero{
+  padding:80px 0 72px;
+  background:
+    radial-gradient(circle at 85% 30%,#ddecff 0 15%,transparent 16%),
+    linear-gradient(135deg,#f8fbff 0%,#fff 52%,#fff8d9 100%);
+  border-bottom:1px solid var(--line);
+}
+.hero .wrap{position:relative}
+.badge{
+  display:inline-block;padding:8px 15px;border-radius:999px;
+  color:var(--blue);background:#eaf3ff;border:1px solid #cce1ff;font-weight:800;
+}
+h1{font-size:clamp(42px,7vw,76px);line-height:1.04;margin:18px 0 8px;color:var(--ink)}
+.gradient{
+  background:linear-gradient(90deg,var(--blue),#00a5ff);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero h2{color:var(--blue);margin:0;font-size:28px}
+.hero p{max-width:760px;margin:18px auto;color:#506079;font-size:18px}
+.small{font-size:14px!important;font-weight:700}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:25px}
+.btn{
+  display:inline-block;border:0;padding:13px 21px;border-radius:12px;
+  font-weight:900;cursor:pointer;background:var(--blue);color:#fff;
+  box-shadow:0 7px 18px #075ee833;transition:.2s transform,.2s box-shadow;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px #075ee844}
+.btn.alt{background:var(--yellow);color:#111;box-shadow:0 7px 18px #ffc40055}
+button.btn{font:inherit}
+
+/* SECTIONS */
+section{padding:70px 0}
+.title{text-align:center;margin-bottom:36px}
+.title h2{font-size:35px;margin:0 0 8px;color:var(--blue)}
+.title h2:after{
+  content:"";display:block;width:60px;height:4px;background:var(--yellow);
+  border-radius:9px;margin:9px auto 0;
+}
+.title p{color:var(--muted)}
+
+/* SERVICE CARDS */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:20px}
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:18px;padding:23px;
+  box-shadow:0 8px 24px #0a55a315;position:relative;overflow:hidden;
+}
+.card:before{
+  content:"";position:absolute;left:0;top:0;width:100%;height:5px;
+  background:linear-gradient(90deg,var(--blue),var(--yellow));
+}
+.card h3{margin:2px 0 8px;color:#182942}
+.card p{color:#65748a;min-height:52px}
+.price{
+  display:flex;justify-content:space-between;border-top:1px solid #edf2f8;
+  padding-top:11px;margin-top:11px
+}
+.price b{color:var(--blue)}
+.card .btn{background:var(--green);box-shadow:0 6px 16px #16b84e33}
+
+/* PACKAGES */
+.pack{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.pack .card{padding:30px}
+.pack .card:first-child{background:linear-gradient(135deg,#075ee8,#0b8cff);color:#fff}
+.pack .card:first-child h3,.pack .card:first-child p{color:#fff}
+.pack .card:first-child:before{background:var(--yellow)}
+.pack .card:last-child{background:linear-gradient(135deg,#fff8cf,#fff);border:2px solid var(--yellow)}
+.pack .card:last-child:before{background:var(--yellow)}
+.pack .card:last-child h3{color:#075ee8}
+
+/* FORM */
+form{
+  max-width:920px;margin:auto;background:#fff;border:1px solid var(--line);
+  border-radius:20px;padding:28px;box-shadow:0 10px 35px #0a55a314
+}
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:17px}
+.field{display:flex;flex-direction:column;gap:7px}
+.full{grid-column:1/-1}
+label{font-weight:800;color:#213451}
+input,select,textarea{
+  width:100%;padding:13px 14px;border-radius:11px;border:1px solid #cfdced;
+  background:#fbfdff;color:#15243b;outline:none;font:inherit
+}
+input:focus,select:focus,textarea:focus{
+  border-color:var(--blue);box-shadow:0 0 0 3px #075ee81a
+}
+textarea{min-height:130px;resize:vertical}
+.notice{
+  padding:13px;border:1px solid #cfe0f6;background:#f4f8ff;border-radius:12px;
+  color:#4e6078;margin:15px 0
+}
+#formMsg{border-color:#bce7c9;background:#effbf2;color:#14753a}
+
+/* CONTACT */
+.contact{text-align:center;background:#f7fbff}
+.contact .phone{font-size:22px;font-weight:900;color:var(--blue);letter-spacing:.5px}
+.contact h3{margin-bottom:2px}.contact h2{color:var(--blue)}
+
+/* FOOTER */
+.footer{padding:30px 0;background:var(--blue);color:#fff;text-align:center;font-weight:700}
+
+/* MOBILE */
+@media(max-width:760px){
+  .navin{padding:11px 0;align-items:flex-start;flex-direction:column}
+  .navlinks{gap:4px}
+  .navlinks a{padding:8px 9px;font-size:13px}
+  .hero{padding-top:58px}
+  .formgrid,.pack{grid-template-columns:1fr}
+  .full{grid-column:auto}
+  .card p{min-height:0}
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap navin">
+<div class="brand">ONLINE<span>GRAPHIC</span>DESIGNER.PK</div>
+<div class="navlinks"><a href="#home">Home</a><a href="#services">Services</a><a href="#order">Order Now</a><a href="#contact">Contact Us</a></div>
+</div></nav>
+
+<main id="home">
+<section class="hero"><div class="wrap">
+<span class="badge">Creative • Professional • Affordable</span>
+<h1>Online <span class="gradient">Graphic Designer</span></h1>
+<h2>Raja Haider Ali</h2>
+<p>Creative digital designs and professional online services for businesses, social media, events and personal needs.</p>
+<p class="small">Fast Delivery • Professional Quality • Affordable Prices</p>
+<div class="btns"><a class="btn" href="#order">🚀 Order Now</a><a class="btn alt" href="#services">🎨 View Services</a></div>
+</div></section>
+
+<section id="services"><div class="wrap"><div class="title"><h2>Our Services</h2><p>Choose a normal or professional package according to your requirements.</p></div>
+<div class="grid" id="serviceGrid"></div></div></section>
+
+<section><div class="wrap"><div class="title"><h2>Normal vs Professional</h2></div><div class="pack">
+<div class="card"><h3>🟢 Normal</h3><p>Affordable design for basic requirements.</p><p>✔ Clean Design<br>✔ Basic Editing<br>✔ Standard Quality<br>✔ Personal Use<br>✔ Affordable Price</p></div>
+<div class="card"><h3>🔵 Professional</h3><p>Premium design for businesses and professional use.</p><p>✔ Premium Design<br>✔ Advanced Editing<br>✔ High-Quality Output<br>✔ Professional Look<br>✔ More Customization</p></div>
+</div></div></section>
+
+<section id="order"><div class="wrap"><div class="title"><h2>📝 Order Now</h2><p>Send your requirements and we will contact you.</p></div>
+<form id="orderForm" autocomplete="on">
+<div class="formgrid">
+<div class="field"><label for="name">Full Name *</label><input id="name" name="name" required maxlength="80"></div>
+<div class="field"><label for="email">Email Address *</label><input id="email" name="email" type="email" required maxlength="120"></div>
+<div class="field"><label for="phone">Phone / WhatsApp *</label><input id="phone" name="phone" required maxlength="25" inputmode="tel"></div>
+<div class="field"><label for="service">Choose Service *</label><select id="service" name="service" required><option value="">Select a service</option></select></div>
+<div class="field"><label for="package">Choose Package *</label><select id="package" name="package" required><option value="">Select package</option><option>Normal</option><option>Professional</option></select></div>
+<div class="field"><label for="price">Service Price</label><input id="price" name="price" readonly></div>
+<div class="field"><label for="deadline">Deadline Date *</label><input id="deadline" name="deadline" type="date" required></div>
+<div class="field full"><label for="details">Order Details *</label><textarea id="details" name="details" required maxlength="3000" placeholder="Write your design requirements, size, text, colors, style, etc."></textarea></div>
+<div class="field"><label for="payment">Payment Method *</label><select id="payment" name="payment" required><option value="">Select payment method</option><option>EasyPaisa</option><option>JazzCash</option></select></div>
+<div class="field"><label for="amount">Payment Amount</label><input id="amount" name="amount" inputmode="decimal" maxlength="12" placeholder="Enter amount"></div>
+<div class="field full"><label for="transaction">Payment Transaction ID / Details</label><input id="transaction" name="transaction" maxlength="80" placeholder="Enter transaction ID if already paid"></div>
+</div>
+<div class="notice">🔐 Security note: this front-end form does not store payment credentials. Never enter an EasyPaisa/JazzCash PIN, password or OTP here.</div>
+<div class="btns"><button class="btn alt" type="submit">🚀 Submit Order</button></div>
+<p id="formMsg" class="notice" hidden></p>
+</form>
+</div></section>
+
+<section id="contact"><div class="wrap contact"><div class="title"><h2>📞 Contact Us</h2></div>
+<h3>Online Graphic Designer</h3><h2>Raja Haider Ali</h2><p>Professional Graphic Designing & Digital Services</p>
+<p class="phone">03325303610<br>03557157954</p>
+<div class="btns"><a class="btn" href="tel:+923325303610">📞 Call Now</a><a class="btn alt" href="https://wa.me/923325303610" target="_blank" rel="noopener noreferrer">💬 Chat on WhatsApp</a></div>
+</div></section>
+</main>
+<footer class="footer">© 2026 OnlineGraphicDesigner.pk • Raja Haider Ali</footer>
+
+<script>
+const services = [
+["Graphic Designing",300,1000,"Creative and professional graphic designs according to your needs."],
+["Video Editing",1000,2500,"YouTube, Facebook, TikTok, Instagram and promotional video editing."],
+["Invitation Card Design",300,1000,"Wedding, birthday, engagement, party and event invitation cards."],
+["Business Card Design",400,800,"Modern and professional business card designs."],
+["Social Media Ads",500,1000,"Attractive advertisements for Facebook, Instagram, WhatsApp and social platforms."],
+["Panaflex Design",800,1500,"Shop, business, event, banner and promotional Panaflex designs."],
+["CV Design",500,1000,"Modern CV designs for jobs and professional use."],
+["Website Design",2500,10000,"Modern, responsive and professional websites."]
+];
+const grid=document.getElementById("serviceGrid"), service=document.getElementById("service"), pkg=document.getElementById("package"), price=document.getElementById("price");
+services.forEach((s,i)=>{
+  const card=document.createElement("article"); card.className="card";
+  card.innerHTML=`<h3><span style="display:inline-block;background:${["#075ee8","#ff8a00","#16b84e","#ffc400","#7b4cff","#00a5b8","#e83e8c","#0b8cff"][i]};color:#fff;border-radius:9px;padding:4px 8px;font-size:13px;margin-right:7px">${String(i+1).padStart(2,"0")}</span>${s[0]}</h3><p>${s[3]}</p><div class="price"><span>Normal</span><b>Rs. ${s[1].toLocaleString()}</b></div><div class="price"><span>Professional</span><b>Rs. ${s[2].toLocaleString()}</b></div><div class="btns"><a class="btn" href="#order" data-service="${i}">Order Now</a></div>`;
+  grid.appendChild(card);
+  const opt=document.createElement("option"); opt.value=i; opt.textContent=`${s[0]} — Normal Rs. ${s[1].toLocaleString()} / Professional Rs. ${s[2].toLocaleString()}`; service.appendChild(opt);
+});
+function updatePrice(){
+  const i=Number(service.value); const p=pkg.value;
+  if(!Number.isInteger(i)||!services[i]||!p){price.value="";return}
+  price.value="Rs. "+(p==="Normal"?services[i][1]:services[i][2]).toLocaleString();
+}
+service.addEventListener("change",updatePrice); pkg.addEventListener("change",updatePrice);
+grid.addEventListener("click",e=>{
+  const a=e.target.closest("[data-service]"); if(!a)return;
+  service.value=a.dataset.service; pkg.value="Normal"; updatePrice();
+});
+document.getElementById("orderForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const msg=document.getElementById("formMsg"); msg.hidden=false;
+  msg.textContent="Order details are ready. For a real production site, connect this form to a secure backend/database before accepting customer orders.";
+  msg.scrollIntoView({behavior:"smooth",block:"center"});
+});
+</script>
+</body>
+</html>
